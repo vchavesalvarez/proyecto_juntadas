@@ -28,13 +28,14 @@ Aplicación web desarrollada en **Python (Django)** y **MySQL** para la materia 
 ```bash
 git clone [https://github.com/vchavesalvarez/proyecto_juntadas.git](https://github.com/vchavesalvarez/proyecto_juntadas.git)
 cd proyecto_juntadas
-
+```
 
 
 ### 2. Instalar las dependencias
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Crear la base de datos en MySQL
 
@@ -45,7 +46,7 @@ Ejecutá el archivo script_base_datos.sql incluido en este repositorio para gene
 ### 4. Configurar las credenciales locales
 Por seguridad, las credenciales reales no se incluyen en el repositorio. Antes de levantar el servidor, configurá tu usuario y contraseña local de MySQL en config/settings.py (o mediante variables de entorno):
 
-Python
+```python
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -56,10 +57,12 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+```
 ### 5. Iniciar el servidor de desarrollo
 
 ```bash
 python manage.py runserver
+```
 Luego, ingresá desde tu navegador a http://127.0.0.1:8000/.
 
 Integrantes - Grupo 11 (Comisión A)
